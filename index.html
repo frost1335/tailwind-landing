@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header section == -->
+    <header class="relative">
+      <div
+        class="w-full h-screen grid grid-cols-1 lg:grid-cols-[2fr_3.5fr_1.5fr]"
+      >
+        <div
+          class="bg-white py-10 pt-14 lg:py-14 px-5 lg:px-8 flex flex-col items-end justify-between gap-y-10"
+        >
+          <h2 class="text-2xl font-medium uppercase font-sans tracking-widest">
+            Logo
+          </h2>
+
+          <div class="space-y-3">
+            <p class="text-zinc-900 text-lg font-medium text-right">
+              🔥 Добро пожаловать в
+            </p>
+            <h1
+              class="break-words uppercase text-4xl lg:text-5xl flex flex-col font-sans tracking-wider font-bold items-end gap-y-4"
+            >
+              <span class="text-zinc-900 p-2.5">Myasnoy</span>
+              <span
+                class="text-white bg-gradient-to-r to-zinc-800 from-red-600 from-40% p-2.5 flex items-center animate-bounce"
+              >
+                Steakhouse! <span>🔥</span></span
+              >
+            </h1>
+          </div>
+        </div>
+
+        <div class="w-full h-full overflow-hidden relative">
+          <img
+            src="./images/image2.jpg"
+            alt="header-img"
+            class="w-full h-full object-cover object-center"
+          />
+          <p
+            class="absolute bottom-14 left-6 text-zinc-300 leading-relaxed lg:text-lg tracking-wider"
+          >
+            Откройте для себя истинное удовольствие от великолепных стейков и
+            непревзойденной атмосферы в самом сердце Ташкента! 🍖✨
+          </p>
+        </div>
+
+        <div class="bg-zinc-800 lg:flex items-center justify-center hidden">
+          <ul class="gap-y-8 flex lg:flex-col">
+            <li>
+              <button
+                class="px-2 uppercase lg:text-lg lg:text-white hover:text-red-600 transition"
+                href="#about"
+                onclick="toSection('about')"
+              >
+                О нас
+              </button>
+            </li>
+            <li>
+              <button
+                class="px-2 uppercase lg:text-lg lg:text-white hover:text-red-600 transition"
+                href="#services"
+                onclick="toSection('services')"
+              >
+                Услуги
+              </button>
+            </li>
+            <li>
+              <button
+                class="px-2 uppercase lg:text-lg lg:text-white hover:text-red-600 transition"
+                href="#contacts"
+                onclick="toSection('contacts')"
+              >
+                Контакты
+              </button>
+            </li>
+            <li class="flex items-center divide-x">
+              <button
+                class="px-2 lg:py-1.5 lg:text-white flex-1 hover:text-red-600 transition"
+              >
+                UZ
+              </button>
+              <button
+                class="px-2 lg:py-1.5 lg:text-white flex-1 hover:text-red-600 transition"
+              >
+                РУ
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- about section -->
+    <main id="about" class="relative">
+      <div
+        class="w-full h-full grid lg:grid-cols-4 grid-cols-3 absolute top-0 right-0 left-0 bottom-0 items-center justify-center"
+      >
+        <div class="w-full h-full bg-zinc-800"></div>
+      </div>
+
+      <div>
+        <div
+          class="min-h-screen max-w-5xl py-14 overflow-hidden m-auto grid grid-cols-1 lg:grid-cols-2 divide-x divide-zinc-600"
+        >
+          <div class="p-4 lg:space-y-56 space-y-8">
+            <div
+              class="bg-white hover:shadow-zinc-200 transition duration-500 px-8 py-14 shadow-xl relative after:absolute after:block after:w-3 after:h-3 after:rounded-full after:bg-zinc-600 after:-right-[22.5px] after:top-1/2 after:-translate-y-1/2"
+            >
+              <p class="tracking-wide">
+                <span class="text-xl">💎</span> Погрузитесь в мир роскоши и уюта
+                в нашем элегантном ресторане, где каждая деталь создана для
+                вашего комфорта и удовольствия.
+              </p>
+            </div>
+            <div
+              class="bg-white hover:shadow-zinc-200 transition duration-500 px-8 py-14 shadow-xl relative after:absolute after:block after:w-3 after:h-3 after:rounded-full after:bg-zinc-600 after:-right-[22.5px] after:top-1/2 after:-translate-y-1/2"
+            >
+              <p class="tracking-wide">
+                <span class="text-xl">🌟</span> Наши высокие стандарты качества
+                гарантируют, что каждое блюдо, поданное в Myasnoy Steakhouse,
+                будет радовать вас и ваших близких самыми изысканными вкусами и
+                ароматами.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex items-center">
+            <div
+              class="bg-white hover:shadow-zinc-300 transition duration-500 px-8 py-14 shadow-xl relative after:absolute after:block after:w-3 after:h-3 after:rounded-full after:bg-zinc-600 lg:after:-left-[22.5px] after:-right-[22.5px] after:top-1/2 after:-translate-y-1/2 lg:mb-24"
+            >
+              <p class="tracking-wide">
+                <span class="text-xl">🍽</span> Насладитесь широким выбором
+                стейков из отборного мяса, приготовленных нашими талантливыми
+                шеф-поварами с любовью и мастерством. Выберите идеальную
+                комбинацию из нашего разнообразного меню соусов и гарниров,
+                чтобы сделать ваш ужин по-настоящему незабываемым.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- services section -->
+
+    <section id="services" class="relative bg-[#EDF0F5]">
+      <div class="container px-6 m-auto max-w-7xl py-8 lg:py-12">
+        <h2
+          class="text-3xl lg:text-4xl text-center font-bold text-zinc-900 tracking-wider mb-16"
+        >
+          Услуги и удобства:
+        </h2>
+
+        <div
+          class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 justify-center gap-4 lg:gap-6"
+        >
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block"
+              src="./icons/icons8-delivery-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Доставка и Еда на вынос:
+            </h3>
+            <p class="text-center">
+              Наслаждайтесь нашими блюдами у себя дома или в офисе.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-tables-64.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Бронирование столов:
+            </h3>
+            <p class="text-center">
+              Забронируйте столик заранее, чтобы гарантировать себе место в
+              нашем ресторане.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-air-quality-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Столики на открытом воздухе:
+            </h3>
+            <p class="text-center">
+              Предлагаем вам насладиться свежим воздухом в наших открытых зонах.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-beer-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Бар с алкогольными напитками:
+            </h3>
+            <p class="text-center">
+              Обширный выбор вин, пива и коктейлей для полного удовлетворения
+              вашего вкуса
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-wifi-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">Бесплатный Wi-Fi:</h3>
+            <p class="text-center">
+              Оставайтесь на связи и делитесь своими впечатлениями в социальных
+              сетях.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-card-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Принимаются кредитные карты и электронные платежи:
+            </h3>
+            <p class="text-center">
+              Оплатите ваш счет удобным для вас способом.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-waiter-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Обслуживание за столиками:
+            </h3>
+            <p class="text-center">
+              Наша дружелюбная команда официантов всегда готова к вашим
+              запросам.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-parking-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Парковка на улице:
+            </h3>
+            <p class="text-center">
+              Удобная парковка рядом с нашим рестораном для вашего комфорта.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-wine-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">Вино и пиво:</h3>
+            <p class="text-center">
+              Разнообразие алкогольных напитков для полного наслаждения вашего
+              ужина.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-dog-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">
+              Для гостей на автомобилях и с собаками:
+            </h3>
+            <p class="text-center">
+              Мы рады приветствовать вас и вашего четвероногого друга или
+              предоставить удобную парковку для вашего автомобиля.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-y-2 p-2 hover:text-red-500 transition"
+          >
+            <img
+              class="block w-[50px] h-[50px]"
+              src="./icons/icons8-family-50.png"
+              alt="service-icon"
+            />
+            <h3 class="text-center text-lg font-semibold">Семейный:</h3>
+            <p class="text-center">
+              Дружественная атмосфера и меню для всей семьи, включая маленьких
+              гурманов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacts section -->
+
+    <section id="contacts" class="lg:py-32 pb-14 lg:pb-0 min-h-screen">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-[repeat(18,1fr)] gap-4 items-center"
+      >
+        <div
+          class="lg:col-start-3 lg:col-span-6 lg:row-start-1 relative z-10 w-full lg:w-[420px] lg:h-[440px] h-[600px]"
+        >
+          <img
+            class="w-full h-full object-cover object-center shadow-xl shadow-zinc-400"
+            src="./images/image1.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="lg:col-start-6 lg:col-span-10 lg:row-start-1 lg:z-0 z-20 lg:py-40 lg:pl-48 lg:px-10 xl:px-28 p-5 m-5 -mt-28 lg:mt-auto lg:m-auto shadow-xl bg-white shadow-zinc-300 border"
+        >
+          <p class="lg:text-xl pl-5 mb-10">
+            🤩 Присоединяйтесь к нам в Myasnoy Steakhouse и окунитесь в мир
+            удовольствия и вкуса! Ждем вас с нетерпением! 🌟
+          </p>
+          <ul class="list-disc lg:pl-32 pl-12 mb-10">
+            <li>
+              <a
+                class="lg:text-lg block font-medium p-2 hover:text-red-600 transition"
+                href="tel:+998 78 148-10-01"
+                >+998 78 148-10-01</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:text-lg block font-medium p-2 hover:text-red-600 transition"
+                href="tel:+998 93 841-77-37"
+                >+998 93 841-77-37</a
+              >
+            </li>
+          </ul>
+          <p class="lg:pl-8">
+            📌 <b>Адрес</b>: Шота Руставели, 13А. Мясной Steak House,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toSection = (section) => {
+        // function for navigating sections
+        console.log(section);
+        document
+          .getElementById(section)
+          ?.scrollIntoView({ behavior: "smooth" });
+      };
+    </script>
+  </body>
+</html>
